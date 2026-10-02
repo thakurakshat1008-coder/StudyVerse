@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Aesthetic Light Color Palette: Champagne, Cashmere, Sage Green, Sandstone */
+.bg-grid-pattern {
+  background-color: #faf6ee; /* Champagne & Cashmere base */
+  background-image:
+    linear-gradient(to right, rgba(138, 160, 132, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(197, 185, 164, 0.09) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-aesthetic-glow {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(214, 230, 240, 0.55) 0%, transparent 45%), /* Misty Blue glow */
+    radial-gradient(circle at 80% 20%, rgba(250, 238, 209, 0.55) 0%, transparent 50%), /* Buttercream glow */
+    radial-gradient(circle at 50% 70%, rgba(245, 230, 230, 0.4) 0%, transparent 60%);   /* Dusty Rose glow */
+}
+
+/* Word Floating Transition */
+@keyframes wordFloatIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.animate-word-float {
+  animation: wordFloatIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.gsi-material-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #dcd7ca;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #2d3827;
+  cursor: pointer;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 13px;
+  height: 38px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 14px;
+  position: relative;
+  text-align: center;
+  transition: all .218s ease;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.gsi-material-button:hover {
+  background-color: #f7f4ee;
+  border-color: #536345;
+}
+

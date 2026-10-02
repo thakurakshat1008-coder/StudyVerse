@@ -1,0 +1,6 @@
+{
+  "name": "CommuniKey - WhatsApp Community Key Gateway",
+  "description": "Single-device key access management system and real-time dashboard for WhatsApp community invite links.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
